@@ -28,24 +28,9 @@ brew services start mongo-community
 
 Using the program
 Create a note:
-node index.js -a|--add "your note!"
 
-node index.js -a|--add "your note!" -c|--category TOAST|NOTE|UNCAT
 
-List all notes:
-node index.js -l|--list
-
-List all notes in a category
-node index.js -l|--list UNCAT|NOTE|TOAST
-
-Delete a specific note
-node index.js -d|--delete {note id}
-
-Update a specific note's category or text
-node index.js -u|--update {note id} -t|--text|-c|-category {the new text or category}
-
-Tests
-Currently in pre-alpha super baby break-me mode. Use at your own risk. No tests written for DB operations yet. Most controller tests run.
+***README ONGOING***
 
 UML
 UML diagram
