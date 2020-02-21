@@ -1,36 +1,69 @@
-LAB - Class 08
-Project Name
-create an express server with Mongo DB. It should be a restful API that only works with JSON formatted objects. 
+LAB - Class 09
+## Project Name
+Create an express server with Mongo DB. It should be a restful API that only works with JSON formatted objects. 
 
 
-Author:
+
+## Author:
 Tyler SAyvetz
 
-Links and Resources
-[submission PR] https://github.com/tyler-401-advanced-javascript/lab-08-api-server/pull/1 
+## Links and Resources
+[submission PR] 
 
 [ci/cd] None.
 
 this is a CLI, no deployment.
 
-Setup
+## Setup
 Clone the repo.
 
-npm i
+`npm i`
 
 Install and start Mongo DB Install mongo. With brew if possible.
 
-brew tap mongodb/brew
+`brew tap mongodb/brew`
 
-brew install mongodb-community@4.2
+`brew install mongodb-community@4.2`
 
-brew services start mongo-community
+`brew services start mongo-community`
 
-Using the program
-Create a note:
+## Using the program
+
+`node index.js`
+
+sent http requests to routes: 
+
+`GET | POST | PUT | DELETE localhost:<port>/:library/:id`
+
+#### Possible libraries
+- orders
+- customers
+- categories
+- products
+
+- GET library with no :id will return all orders
+- POST library to be sent with body:
+  - `{ key: value }`
+
+### Example requests
+
+- `GET /orders/28792jd830c88` -> returns order with that id
+
+- `GET /orders` -> return all orders
+
+- `POST /categories` body: { name: drinks } -> returns copy of resource created.
+
+- `DELETE /categories/aljsdhf88392` -> returns copy of resource that was deleted.
 
 
-***README ONGOING***
+### tests
+
+run tests with `npm test` . This will create a coverage report that you can access at:
+
+`open coverage/lcov-report/index.html`
+
+
+
 
 UML
 UML diagram
