@@ -7,7 +7,7 @@ Author:
 Tyler SAyvetz
 
 Links and Resources
-[submission PR] 
+[submission PR] https://github.com/tyler-401-advanced-javascript/lab-08-api-server/pull/1 
 
 [ci/cd] None.
 
