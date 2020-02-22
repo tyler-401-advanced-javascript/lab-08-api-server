@@ -3,7 +3,7 @@ function handleGet(req, res, next) {
   const query = req.params.id ? req.params.id : '';
   req.model.read(query)
     .then(results => {
-      res.status(200).json(results);
+      res.status(200).json({number: results.length, results: results});
     })
     .catch(console.log);
 }
