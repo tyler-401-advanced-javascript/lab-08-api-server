@@ -6,18 +6,19 @@ const cors = require('cors')
 
 const { handleGet, handlePost, handlePut, handleDelete } = require('./api/lib/routeHandlers');
 
+//set up middleware for body parsing, logging, and request security
 app.use(express.json());
 app.use(morgan('tiny'));
 app.use(cors())
 
 
-//models
+//models require
 const Categories = require('./models/Categories');
 const Products = require('./models/Products');
 const Customers = require('./models/Customers');
 const Orders = require('./models/Orders.js');
 
-//instances
+//instances of models
 const customers = new Customers();
 const categories = new Categories();
 const products = new Products();
