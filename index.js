@@ -1,5 +1,10 @@
 
 //Entry point.
+
+/**
+ * @author Tyler Sayvetz
+ */
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 
