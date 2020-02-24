@@ -1,9 +1,13 @@
 
+ // The following functions are meant to query the Mongo DB and do CRUD operations. The model that the CRUD operation uses in it's database querying comes to each of these functions in the req as a parameter called 'model'.
+
+ //export these functions for use in app.js.
+
 function handleGet(req, res, next) {
   const query = req.params.id ? req.params.id : '';
   req.model.read(query)
     .then(results => {
-      res.status(200).json(results);
+      res.status(200).json({number: results.length, results: results});
     })
     .catch(console.log);
 }

@@ -1,18 +1,17 @@
-LAB - Class 09
+LAB - Class 10
 ## Project Name
 Create an express server with Mongo DB. It should be a restful API that only works with JSON formatted objects. 
 
 
 
 ## Author:
-Tyler SAyvetz
+Tyler Sayvetz
 
 ## Links and Resources
-[submission PR] 
+[submission PR] (PR here)
 
-[ci/cd] None.
+[ci/cd] None
 
-this is a CLI, no deployment.
 
 ## Setup
 Clone the repo.
@@ -62,6 +61,8 @@ run tests with `npm test` . This will create a coverage report that you can acce
 
 `open coverage/lcov-report/index.html`
 
+### Change Log
+- 2/22 - change response for get all :model to include number of documents returned.
 
 
 
