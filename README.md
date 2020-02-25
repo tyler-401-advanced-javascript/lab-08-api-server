@@ -10,7 +10,8 @@ Tyler Sayvetz
 ## Links and Resources
 [submission PR] (PR here)
 
-[ci/cd] None
+- [Live Deployment](https://tylers-rest-api.herokuapp.com/)
+
 
 
 ## Setup
